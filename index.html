@@ -32,6 +32,12 @@
     .btn-filled { background: var(--brand2); color: #fff; border: 2px solid var(--brand2); }
     .btn-filled:hover { background: #022f28; border-color: #022f28; }
     .icon { width: 20px; height: 20px; }
+
+    /* Desktop-only header/hero refinements */
+    @media (min-width: 768px) {
+      .desktop-nav { font-size: 1rem; }
+      .hero-section { padding-top: 2.5rem; }
+    }
   
 .quicknote-hover-match:hover { 
   background: #022f28 !important; 
@@ -74,8 +80,8 @@
 <!-- Top Bar -->
 <header class="bg-white border-b border-slate-200/70 sticky top-0 z-40">
 <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-<a href="#top"><img src="image-logo.png" alt="JB Bookkeepers logo" class="h-20 md:h-24 w-auto select-none py-2" draggable="false"></a>
-<nav class="hidden md:flex items-center gap-6 text-sm">
+<a href="#top"><img src="image-logo.png" alt="JB Bookkeepers logo" class="h-20 md:h-28 w-auto select-none py-2" draggable="false"></a>
+<nav class="desktop-nav hidden md:flex items-center gap-6 text-sm">
 
 
 
@@ -94,7 +100,7 @@
 </nav>
 </header>
 <!-- Hero -->
-<section class="bg-gradient-to-b from-white to-[var(--neutral-light)]">
+<section class="hero-section bg-gradient-to-b from-white to-[var(--neutral-light)]">
 <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
 <div>
 <h1 class="mt-4 text-4xl sm:text-5xl font-black leading-tight">Stress-free bookkeeping for busy owners.</h1>
