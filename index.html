@@ -73,37 +73,25 @@
 <a id="top"></a>
 <!-- Top Bar -->
 <header class="bg-white border-b border-slate-200/70 sticky top-0 z-40">
-  <div class="container mx-auto px-4">
-    <!-- Main header row -->
-    <div class="py-3 flex items-center justify-between">
-      <a href="#top" aria-label="JB Bookkeepers home">
-        <img src="image-logo.png" alt="JB Bookkeepers logo" class="h-20 md:h-24 w-auto select-none py-2" draggable="false">
-      </a>
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<a href="#top"><img src="image-logo.png" alt="JB Bookkeepers logo" class="h-20 md:h-24 w-auto select-none py-2" draggable="false"></a>
+<nav class="hidden md:flex items-center gap-6 text-sm">
 
-      <!-- Desktop quick links -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700" aria-label="Primary navigation">
-        <a class="hover:text-[var(--brand)]" href="#services">Services</a>
-        <a class="hover:text-[var(--brand)]" href="#pricing">Pricing</a>
-        <a class="hover:text-[var(--brand)]" href="#about">About</a>
-        <a class="hover:text-[var(--brand)]" href="#contact">Contact</a>
-      </nav>
 
-      <a class="hidden sm:inline-flex items-center gap-2 text-[var(--brand)] font-extrabold" href="tel:8013177835">
-        <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C11.08 22 3 13.92 3 4.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path>
-        </svg>
-        <span>801-317-7835</span>
-      </a>
-    </div>
 
-    <!-- Mobile quick links: visible below the logo on phones -->
-    <nav class="md:hidden -mt-1 pb-3 flex items-center justify-between gap-2 text-[13px] font-bold text-slate-700" aria-label="Mobile navigation">
-      <a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#services">Services</a>
-      <a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#pricing">Pricing</a>
-      <a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#about">About</a>
-      <a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#contact">Contact</a>
-    </nav>
-  </div>
+
+<a class="hover:text-[var(--brand)]" href="#services">Services</a> <a class="hover:text-[var(--brand)]" href="#pricing">Pricing</a> <a class="hover:text-[var(--brand)]" href="#about">About</a> <a class="hover:text-[var(--brand)]" href="#contact">Contact</a></nav>
+<a class="hidden sm:inline-flex items-center gap-2 text-[var(--brand)] font-extrabold" href="tel:8013177835"><svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C11.08 22 3 13.92 3 4.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path>
+</svg><span>801-317-7835</span></a>
+</div>
+<!-- Mobile quick links only; hidden on desktop -->
+<nav class="md:hidden container mx-auto px-4 pb-3 flex items-center justify-between gap-2 text-[13px] font-semibold text-slate-700" aria-label="Mobile navigation">
+<a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#services">Services</a>
+<a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#pricing">Pricing</a>
+<a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#about">About</a>
+<a class="py-2 px-2 rounded-lg hover:bg-slate-50 hover:text-[var(--brand)]" href="#contact">Contact</a>
+</nav>
 </header>
 <!-- Hero -->
 <section class="bg-gradient-to-b from-white to-[var(--neutral-light)]">
