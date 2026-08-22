@@ -85,14 +85,52 @@
       box-shadow: 0 0 0 3px rgba(3, 67, 55, 0.10);
     }
 
+    /*
+      DESKTOP ONLY
+      Mobile layout stays unchanged.
+    */
     @media (min-width: 1024px) {
+
+      .hero-section {
+        padding-top: 46px !important;
+        padding-bottom: 48px !important;
+      }
+
       .desktop-hero {
         grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+        gap: 48px !important;
+      }
+
+      .desktop-copy {
+        padding-top: 0 !important;
+      }
+
+      .hero-title {
+        margin-top: 16px !important;
+      }
+
+      .hero-description {
+        margin-top: 16px !important;
+        line-height: 1.65 !important;
+      }
+
+      .conference-offer {
+        margin-top: 22px !important;
+      }
+
+      .services-grid {
+        margin-top: 24px !important;
       }
 
       .claim-card {
         position: sticky;
-        top: 30px;
+        top: 24px;
+        padding: 30px !important;
+      }
+
+      .bottom-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
       }
     }
   </style>
@@ -111,13 +149,11 @@
         href="https://jbbookkeepers.com/"
         aria-label="JB Bookkeepers home"
       >
-
         <img
           src="/image-logo.png"
           alt="JB Bookkeepers"
           class="h-16 sm:h-20 w-auto"
         >
-
       </a>
 
       <a
@@ -136,7 +172,7 @@
 
     <!-- HERO -->
     <section
-      class="bg-gradient-to-b from-white to-[var(--page)] pt-10 pb-12 sm:pt-16 sm:pb-16"
+      class="hero-section bg-gradient-to-b from-white to-[var(--page)] pt-10 pb-12 sm:pt-16 sm:pb-16"
     >
 
       <div
@@ -144,7 +180,7 @@
       >
 
         <!-- LEFT SIDE -->
-        <div class="lg:pt-3">
+        <div class="desktop-copy lg:pt-3">
 
           <div
             class="inline-flex items-center rounded-full bg-[var(--soft)] px-4 py-2 text-sm font-extrabold text-[var(--brand)]"
@@ -153,13 +189,13 @@
           </div>
 
           <h1
-            class="mt-5 text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.05] tracking-tight"
+            class="hero-title mt-5 text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.05] tracking-tight"
           >
             Bookkeeping built for Picklr clubs.
           </h1>
 
           <p
-            class="mt-5 text-lg leading-8 text-slate-600 max-w-2xl"
+            class="hero-description mt-5 text-lg leading-8 text-slate-600 max-w-2xl"
           >
             We already work with Picklr franchise owners, so you don't have to
             spend time teaching us how your club works. We can help keep your
@@ -169,7 +205,7 @@
 
           <!-- OFFER -->
           <div
-            class="mt-7 rounded-2xl bg-white border-2 border-[var(--brand)] p-5 sm:p-6 offer-ring"
+            class="conference-offer mt-7 rounded-2xl bg-white border-2 border-[var(--brand)] p-5 sm:p-6 offer-ring"
           >
 
             <p
@@ -209,7 +245,7 @@
 
           <!-- SERVICES -->
           <div
-            class="mt-8 grid sm:grid-cols-2 gap-3 text-sm"
+            class="services-grid mt-8 grid sm:grid-cols-2 gap-3 text-sm"
           >
 
             <div
@@ -518,7 +554,7 @@
 
     <!-- BOTTOM SECTION -->
     <section
-      class="bg-white py-12 sm:py-14"
+      class="bottom-section bg-white py-12 sm:py-14"
     >
 
       <div
@@ -559,9 +595,7 @@
         © <span id="year"></span> JB Bookkeeping LLC
       </p>
 
-      <div
-        class="flex gap-4"
-      >
+      <div class="flex gap-4">
 
         <a
           class="hover:text-[var(--brand)]"
