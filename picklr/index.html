@@ -3,19 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Picklr Bookkeeping | JB Bookkeepers</title>
-  <meta name="description" content="Bookkeeping built for Picklr franchise owners. Conference attendees can claim their first month of monthly bookkeeping free when they start by September 15, 2026.">
+
+  <meta
+    name="description"
+    content="Bookkeeping built for Picklr franchise owners. Conference attendees can claim their first month of monthly bookkeeping free when they start by September 15, 2026."
+  >
+
   <meta name="theme-color" content="#034337">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <script src="https://cdn.tailwindcss.com"></script>
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jbbookkeepers.com/picklr/">
   <meta property="og:title" content="Picklr Bookkeeping | JB Bookkeepers">
-  <meta property="og:description" content="Bookkeeping built for Picklr franchise owners. First month free for conference attendees who start by September 15, 2026.">
+  <meta
+    property="og:description"
+    content="Bookkeeping built for Picklr franchise owners. First month free for conference attendees who start by September 15, 2026."
+  >
   <meta property="og:image" content="https://jbbookkeepers.com/og-image.png">
 
   <style>
@@ -26,137 +40,338 @@
       --page: #f8fafc;
       --text: #334155;
     }
+
     * {
       box-sizing: border-box;
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--page); color: var(--text); }
-    h1, h2, h3 { color: var(--brand); }
-    .shadow-soft { box-shadow: 0 12px 35px rgba(2, 47, 40, 0.08); }
-    .offer-ring { box-shadow: 0 0 0 8px rgba(3, 67, 55, .06); }
-    input, select, textarea { outline: none; }
-    input:focus, select:focus, textarea:focus {
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--brand);
+    }
+
+    .shadow-soft {
+      box-shadow: 0 12px 35px rgba(2, 47, 40, 0.08);
+    }
+
+    .offer-ring {
+      box-shadow: 0 0 0 8px rgba(3, 67, 55, 0.06);
+    }
+
+    input,
+    select,
+    textarea {
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
       border-color: var(--brand);
-      box-shadow: 0 0 0 3px rgba(3, 67, 55, .10);
+      box-shadow: 0 0 0 3px rgba(3, 67, 55, 0.10);
+    }
+
+    /* Give desktop a little more presence without changing mobile */
+    @media (min-width: 1024px) {
+      .desktop-hero {
+        grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+      }
+
+      .claim-card {
+        position: sticky;
+        top: 30px;
+      }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="bg-white border-b border-slate-200/70">
-    <div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between gap-4">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8 py-3 flex items-center justify-between gap-4">
+
       <a href="https://jbbookkeepers.com/" aria-label="JB Bookkeepers home">
-        <img src="/image-logo.png" alt="JB Bookkeepers" class="h-16 sm:h-20 w-auto">
+        <img
+          src="/image-logo.png"
+          alt="JB Bookkeepers"
+          class="h-16 sm:h-20 w-auto"
+        >
       </a>
-      <a href="tel:8013177835" class="hidden sm:inline font-extrabold text-[var(--brand)] hover:text-[var(--brand-dark)]">
+
+      <a
+        href="tel:8013177835"
+        class="hidden sm:inline font-extrabold text-[var(--brand)] hover:text-[var(--brand-dark)]"
+      >
         801-317-7835
       </a>
+
     </div>
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section class="bg-gradient-to-b from-white to-[var(--page)] pt-10 pb-12 sm:pt-16 sm:pb-16">
-      <div class="max-w-5xl mx-auto px-5 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-        <div>
-          <div class="inline-flex items-center rounded-full bg-[var(--soft)] px-4 py-2 text-sm font-extrabold text-[var(--brand)]">
+
+      <div
+        class="desktop-hero max-w-6xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start"
+      >
+
+        <!-- LEFT SIDE -->
+        <div class="lg:pt-3">
+
+          <div
+            class="inline-flex items-center rounded-full bg-[var(--soft)] px-4 py-2 text-sm font-extrabold text-[var(--brand)]"
+          >
             PICKLR CONFERENCE OFFER
           </div>
 
-          <h1 class="mt-5 text-4xl sm:text-5xl font-black leading-[1.05] tracking-tight">
+          <h1
+            class="mt-5 text-4xl sm:text-5xl lg:text-[54px] font-black leading-[1.05] tracking-tight"
+          >
             Bookkeeping built for Picklr clubs.
           </h1>
 
-          <p class="mt-5 text-lg leading-8 text-slate-600">
-            We already work with Picklr franchise owners, so you don't have to spend time teaching us how your club works.
-            We can help keep your books clean, reconciled, and ready for month-end.
+          <p class="mt-5 text-lg leading-8 text-slate-600 max-w-2xl">
+            We already work with Picklr franchise owners, so you don't have to
+            spend time teaching us how your club works. We can help keep your
+            books clean, reconciled, and ready for month-end.
           </p>
 
-          <div class="mt-7 rounded-2xl bg-white border-2 border-[var(--brand)] p-5 offer-ring">
-            <p class="text-sm font-extrabold tracking-wide text-[var(--brand)]">CONFERENCE SPECIAL</p>
-            <p class="mt-1 text-2xl sm:text-3xl font-black text-slate-900">Your first month FREE</p>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-              For new monthly bookkeeping clients who get started by <strong>September 15, 2026</strong>.
+
+          <!-- OFFER -->
+          <div
+            class="mt-7 rounded-2xl bg-white border-2 border-[var(--brand)] p-5 sm:p-6 offer-ring"
+          >
+
+            <p
+              class="text-sm font-extrabold tracking-wide text-[var(--brand)]"
+            >
+              CONFERENCE SPECIAL
             </p>
+
+            <p
+              class="mt-1 text-2xl sm:text-3xl font-black text-slate-900"
+            >
+              Your first month FREE
+            </p>
+
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              For new monthly bookkeeping clients who get started by
+              <strong>September 15, 2026</strong>.
+            </p>
+
+            <div class="mt-4 pt-4 border-t border-slate-200">
+              <p class="font-bold text-slate-800">
+                Monthly bookkeeping starts at
+                <span class="text-[var(--brand)]">$199/month</span>
+                after your free month.
+              </p>
+            </div>
+
           </div>
 
-          <div class="mt-7 grid sm:grid-cols-2 gap-3 text-sm">
+
+          <!-- SERVICES -->
+          <div class="mt-8 grid sm:grid-cols-2 gap-3 text-sm">
+
             <div class="flex gap-3 items-start bg-white rounded-xl border border-slate-200 p-4">
               <span class="font-black text-[var(--brand)]">✓</span>
               <span>Monthly transaction categorization</span>
             </div>
+
             <div class="flex gap-3 items-start bg-white rounded-xl border border-slate-200 p-4">
               <span class="font-black text-[var(--brand)]">✓</span>
               <span>Bank &amp; credit card reconciliations</span>
             </div>
+
             <div class="flex gap-3 items-start bg-white rounded-xl border border-slate-200 p-4">
               <span class="font-black text-[var(--brand)]">✓</span>
               <span>Stripe &amp; PlayByPoint bookkeeping support</span>
             </div>
+
             <div class="flex gap-3 items-start bg-white rounded-xl border border-slate-200 p-4">
               <span class="font-black text-[var(--brand)]">✓</span>
               <span>Monthly payroll adjustments</span>
             </div>
+
             <div class="flex gap-3 items-start bg-white rounded-xl border border-slate-200 p-4">
               <span class="font-black text-[var(--brand)]">✓</span>
               <span>Sales tax reporting — we provide the numbers, you file</span>
             </div>
+
             <div class="flex gap-3 items-start bg-white rounded-xl border border-slate-200 p-4">
               <span class="font-black text-[var(--brand)]">✓</span>
               <span>Monthly P&amp;L and Balance Sheet</span>
             </div>
+
           </div>
 
-          <p class="mt-6 text-base font-bold text-slate-800">
-            Monthly bookkeeping starts at <span class="text-[var(--brand)]">$199/month</span>.
-          </p>
         </div>
 
-        <div id="claim" class="rounded-3xl bg-white border border-slate-200 p-6 sm:p-8 shadow-soft">
-          <h2 class="text-2xl sm:text-3xl font-black">Claim the conference offer</h2>
+
+        <!-- RIGHT SIDE -->
+        <div
+          id="claim"
+          class="claim-card rounded-3xl bg-white border border-slate-200 p-6 sm:p-8 lg:p-9 shadow-soft"
+        >
+
+          <h2 class="text-2xl sm:text-3xl font-black">
+            Claim the conference offer
+          </h2>
+
           <p class="mt-2 text-sm leading-6 text-slate-600">
             Drop your info below. No payment or credit card needed right now.
           </p>
 
-          <form id="picklr-form" action="https://formspree.io/f/mzzvwjvo" method="POST" class="mt-6 space-y-4">
-            <input type="hidden" name="_subject" value="New Picklr Conference Lead">
-            <input type="hidden" name="source" value="Picklr Conference 2026 QR">
-            <input type="hidden" name="offer" value="First month free - start by September 15, 2026">
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
 
+          <form
+            id="picklr-form"
+            action="https://formspree.io/f/mzzvwjvo"
+            method="POST"
+            class="mt-6 space-y-4"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Picklr Conference Lead"
+            >
+
+            <input
+              type="hidden"
+              name="source"
+              value="Picklr Conference 2026 QR"
+            >
+
+            <input
+              type="hidden"
+              name="offer"
+              value="First month free - start by September 15, 2026"
+            >
+
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              style="display:none"
+            >
+
+
+            <!-- NAME -->
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-1.5" for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required
+              <label
+                class="block text-sm font-bold text-slate-700 mb-1.5"
+                for="name"
+              >
+                Name
+              </label>
+
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
                 class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white"
-                placeholder="Your name">
+                placeholder="Your name"
+              >
             </div>
 
+
+            <!-- EMAIL -->
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-1.5" for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required
+              <label
+                class="block text-sm font-bold text-slate-700 mb-1.5"
+                for="email"
+              >
+                Email
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
                 class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white"
-                placeholder="you@example.com">
+                placeholder="you@example.com"
+              >
             </div>
 
+
+            <!-- PHONE -->
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-1.5" for="phone">Phone <span class="font-normal text-slate-400">(optional)</span></label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel"
+              <label
+                class="block text-sm font-bold text-slate-700 mb-1.5"
+                for="phone"
+              >
+                Phone
+                <span class="font-normal text-slate-400">(optional)</span>
+              </label>
+
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
                 class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white"
-                placeholder="555-555-5555">
+                placeholder="555-555-5555"
+              >
             </div>
 
+
+            <!-- CLUB LOCATION -->
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-1.5" for="location">Picklr club location</label>
-              <input id="location" name="picklr_location" type="text" required
+              <label
+                class="block text-sm font-bold text-slate-700 mb-1.5"
+                for="location"
+              >
+                Picklr club location
+              </label>
+
+              <input
+                id="location"
+                name="picklr_location"
+                type="text"
+                required
                 class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white"
-                placeholder="City, State">
+                placeholder="City, State"
+              >
             </div>
 
-            <div class="grid sm:grid-cols-2 gap-4">
+
+            <!-- LOCATIONS + BOOKKEEPING NEEDS -->
+            <div class="grid sm:grid-cols-[0.8fr_1.2fr] gap-4">
+
               <div>
-                <label class="block text-sm font-bold text-slate-700 mb-1.5" for="locations">Locations</label>
-                <select id="locations" name="number_of_locations"
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white">
+                <label
+                  class="block text-sm font-bold text-slate-700 mb-1.5"
+                  for="locations"
+                >
+                  Locations
+                </label>
+
+                <select
+                  id="locations"
+                  name="number_of_locations"
+                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white"
+                >
                   <option value="1">1 location</option>
                   <option value="2">2 locations</option>
                   <option value="3">3 locations</option>
@@ -164,63 +379,143 @@
                 </select>
               </div>
 
+
               <div>
-                <label class="block text-sm font-bold text-slate-700 mb-1.5" for="help">Need help with</label>
-                <select id="help" name="help_needed"
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white">
+                <label
+                  class="block text-sm font-bold text-slate-700 mb-1.5"
+                  for="help"
+                >
+                  Bookkeeping needs
+                </label>
+
+                <select
+                  id="help"
+                  name="help_needed"
+                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white"
+                >
                   <option>Monthly bookkeeping</option>
-                  <option>Catch-up / clean-up</option>
-                  <option>Both</option>
-                  <option>Not sure yet</option>
+                  <option>Catch-up / cleanup</option>
+                  <option>Monthly + catch-up</option>
+                  <option>Sales tax</option>
+                  <option>Payroll bookkeeping</option>
+                  <option>Multiple locations</option>
+                  <option>Other / not sure yet</option>
                 </select>
               </div>
+
             </div>
 
-            <button id="submit-btn" type="submit"
-              class="w-full rounded-xl bg-[var(--brand)] px-5 py-4 text-white font-extrabold text-base hover:bg-[var(--brand-dark)]">
+
+            <!-- BUTTON -->
+            <button
+              id="submit-btn"
+              type="submit"
+              class="w-full rounded-xl bg-[var(--brand)] px-5 py-4 text-white font-extrabold text-base hover:bg-[var(--brand-dark)] transition-colors"
+            >
               CLAIM MY FREE MONTH
             </button>
 
-            <p id="form-status" class="hidden rounded-xl px-4 py-3 text-sm font-semibold" role="status" aria-live="polite"></p>
+
+            <!-- FORM STATUS -->
+            <p
+              id="form-status"
+              class="hidden rounded-xl px-4 py-3 text-sm font-semibold"
+              role="status"
+              aria-live="polite"
+            ></p>
+
 
             <p class="text-xs leading-5 text-slate-400">
-              Conference offer applies to new monthly bookkeeping clients. Catch-up or clean-up work, if needed, is quoted separately.
+              Conference offer applies to new monthly bookkeeping clients.
+              Catch-up or clean-up work, if needed, is quoted separately.
             </p>
+
           </form>
 
+
+          <!-- BOOK CALL -->
           <div class="mt-6 pt-6 border-t border-slate-200 text-center">
-            <p class="text-sm text-slate-500">Rather talk first?</p>
-            <a href="https://calendly.com/jordan-jbbookkeepers/30min" target="_blank" rel="noopener"
-              class="mt-3 inline-flex w-full items-center justify-center rounded-xl border-2 border-slate-200 px-5 py-3 font-extrabold text-slate-800 hover:bg-slate-50">
+
+            <p class="text-sm text-slate-500">
+              Rather talk first?
+            </p>
+
+            <a
+              href="https://calendly.com/jordan-jbbookkeepers/30min"
+              target="_blank"
+              rel="noopener"
+              class="mt-3 inline-flex w-full items-center justify-center rounded-xl border-2 border-slate-200 px-5 py-3 font-extrabold text-slate-800 hover:bg-slate-50 transition-colors"
+            >
               BOOK A CALL
             </a>
+
           </div>
+
         </div>
+
       </div>
     </section>
 
-    <section class="bg-white py-12">
+
+    <!-- BOTTOM SECTION -->
+    <section class="bg-white py-12 sm:py-14">
+
       <div class="max-w-4xl mx-auto px-5 text-center">
-        <h2 class="text-2xl sm:text-3xl font-black">Less time in QuickBooks. More time growing your club.</h2>
+
+        <h2 class="text-2xl sm:text-3xl font-black">
+          Less time in QuickBooks. More time growing your club.
+        </h2>
+
         <p class="mt-4 text-slate-600 leading-7 max-w-2xl mx-auto">
-          JB Bookkeepers provides hands-on monthly bookkeeping and straightforward financial reporting for business owners who want clean books without the extra administrative work.
+          JB Bookkeepers provides hands-on monthly bookkeeping and
+          straightforward financial reporting for business owners who want
+          clean books without the extra administrative work.
         </p>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="bg-white border-t border-slate-200 py-8">
-    <div class="max-w-5xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500">
-      <p>© <span id="year"></span> JB Bookkeeping LLC</p>
+
+    <div
+      class="max-w-6xl mx-auto px-5 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500"
+    >
+
+      <p>
+        © <span id="year"></span> JB Bookkeeping LLC
+      </p>
+
       <div class="flex gap-4">
-        <a class="hover:text-[var(--brand)]" href="mailto:Hello@jbbookkeepers.com">Hello@jbbookkeepers.com</a>
-        <a class="hover:text-[var(--brand)]" href="tel:8013177835">801-317-7835</a>
+
+        <a
+          class="hover:text-[var(--brand)]"
+          href="mailto:Hello@jbbookkeepers.com"
+        >
+          Hello@jbbookkeepers.com
+        </a>
+
+        <a
+          class="hover:text-[var(--brand)]"
+          href="tel:8013177835"
+        >
+          801-317-7835
+        </a>
+
       </div>
+
     </div>
+
   </footer>
 
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
 
     const form = document.getElementById("picklr-form");
     const status = document.getElementById("form-status");
@@ -228,6 +523,7 @@
 
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
+
       button.disabled = true;
       button.textContent = "SENDING...";
 
@@ -235,24 +531,40 @@
         const response = await fetch(form.action, {
           method: "POST",
           body: new FormData(form),
-          headers: { "Accept": "application/json" }
+          headers: {
+            "Accept": "application/json"
+          }
         });
 
         if (response.ok) {
+
           form.reset();
-          status.className = "rounded-xl px-4 py-3 text-sm font-semibold bg-[var(--soft)] text-[var(--brand)]";
-          status.textContent = "You're in! We'll follow up shortly with the conference offer.";
+
+          status.className =
+            "rounded-xl px-4 py-3 text-sm font-semibold bg-[var(--soft)] text-[var(--brand)]";
+
+          status.textContent =
+            "You're in! We'll follow up shortly with the conference offer.";
+
           button.textContent = "SUBMITTED";
+
         } else {
           throw new Error("Submission failed");
         }
+
       } catch (error) {
-        status.className = "rounded-xl px-4 py-3 text-sm font-semibold bg-red-50 text-red-700";
-        status.textContent = "Something went wrong. Please try again or email Hello@jbbookkeepers.com.";
+
+        status.className =
+          "rounded-xl px-4 py-3 text-sm font-semibold bg-red-50 text-red-700";
+
+        status.textContent =
+          "Something went wrong. Please try again or email Hello@jbbookkeepers.com.";
+
         button.disabled = false;
         button.textContent = "CLAIM MY FREE MONTH";
       }
     });
   </script>
+
 </body>
 </html>
